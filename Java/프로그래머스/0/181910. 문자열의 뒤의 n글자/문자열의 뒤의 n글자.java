@@ -5,6 +5,7 @@ class Solution {
         for(int i = start; i < my_string.length(); i++) {
             answer += my_string.charAt(i);
         }
+        // return my_string.substring(start);
         return answer;
     }
 }
