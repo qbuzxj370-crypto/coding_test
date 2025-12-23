@@ -5,14 +5,14 @@ class Solution {
         int[] answer = {0, 0};
         Set<String> used = new HashSet<>();
         int idx = 0;
-        for (int j = 0; j < words.length; j++) {
-            String word = words[j];
-            if (word.length() == 1 || (j > 0 && word.charAt(0) != words[j - 1].charAt(words[j - 1].length() - 1))) {
-                idx = j + 1;
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            if (word.length() == 1 || (i > 0 && word.charAt(0) != words[i - 1].charAt(words[i - 1].length() - 1))) {
+                idx = i + 1;
                 break;
             }
             if (used.contains(word)) {
-                idx = j + 1;
+                idx = i + 1;
                 break;
             }
             used.add(word);
