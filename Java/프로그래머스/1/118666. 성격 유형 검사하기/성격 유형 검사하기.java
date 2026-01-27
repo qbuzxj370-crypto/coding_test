@@ -13,12 +13,7 @@ class Solution {
             if(choices[i] == 4) {
                 continue;
             }
-            else if(score > 4) {
-                score = choices[i] - 7;
-            }
-            else {
-                score = 4 - choices[i];
-            }
+            score = 4 - choices[i];
             switch(survey[i]) {
                 case "RT":
                     arr[0] += score;
