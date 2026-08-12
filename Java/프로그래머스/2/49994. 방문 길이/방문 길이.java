@@ -10,19 +10,19 @@ class Solution {
             String old = x + ", " + y;
             switch (c) {
                 case 'U':
-                    if(y >= 5) break;
+                    if(y >= 5) continue;
                     y++;
                     break;
                 case 'D':
-                    if(y <= -5) break;
+                    if(y <= -5) continue;
                     y--;
                     break;
                 case 'R':
-                    if(x >= 5) break;
+                    if(x >= 5) continue;
                     x++;
                     break;
                 case 'L':
-                    if(x <= -5) break;
+                    if(x <= -5) continue;
                     x--;
                     break;
             }
